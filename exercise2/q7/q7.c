@@ -35,18 +35,19 @@ int main(void)
 			break;
 			
 			case 3:
-			printf(" ");
-			for (column = 3; column < 5; column++)
-			{
-				printf(" ");
-			}
-			printf ("#");
-			printf (" ");
-			printf ("#");
-			break;
-		}
-		printf("*");
-		printf("\n");
+			for (column = 0; column < 7; column++)
+            {
+                if (column == 2 || column == 5)
+                    printf("#");
+                else if (column == 7 || column == 0)
+                    continue;
+                else
+                    printf(" ");
+            }
+            break;
+        }
+        printf("*");
+        printf("\n");
 	}
 	return 0;
 }
