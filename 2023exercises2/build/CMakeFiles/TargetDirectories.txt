@@ -1,0 +1,3 @@
+/Users/maria/Desktop/Programming/Learning-C/2023exercises2/build/CMakeFiles/q1.dir
+/Users/maria/Desktop/Programming/Learning-C/2023exercises2/build/CMakeFiles/edit_cache.dir
+/Users/maria/Desktop/Programming/Learning-C/2023exercises2/build/CMakeFiles/rebuild_cache.dir
