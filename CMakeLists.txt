@@ -1,0 +1,10 @@
+# CMakeLists.txt in the root directory
+
+cmake_minimum_required(VERSION 3.26)
+
+project(Exercises)
+
+# Add the Exercise1/Q1 subdirectory
+add_subdirectory("exercise2")
+
+# You can add more subdirectories here if needed

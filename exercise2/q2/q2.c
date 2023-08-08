@@ -7,6 +7,6 @@ int main(void)
 	{
 		printf("%i * 13 = %i\n", mult, mult * 13);
 	}
-	
+
 	return 0;
 }
