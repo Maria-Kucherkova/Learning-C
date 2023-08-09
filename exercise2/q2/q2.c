@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-int main(void)
-{
-	int mult;
-	for (mult = 1 ; mult < 13 ; mult++)
-	{
-		printf("%i * 13 = %i\n", mult, mult * 13);
+int main() {
+    int multiplier;
+	for (multiplier = 1; multiplier <=10; multiplier++) {
+		int result = multiplier * 13;
+        printf("%d * 13 = %d\n", multiplier, result);
 	}
-
-	return 0;
+    return 0;
 }

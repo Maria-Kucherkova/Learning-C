@@ -2,12 +2,13 @@
 
 int main(void)
 {
-	int mult = 1;
+	int multiplier = 1;
 	do
 	{
-		printf("%i * 13 = %i\n", mult, mult * 13);
+		int result = multiplier * 13;
+		printf("%i * 13 = %i\n", multiplier, result);
 	}
-	while (++mult<=13);
+	while (++multiplier<=10);
 	
 	return 0;
 }

@@ -1,19 +1,18 @@
 #include <stdio.h>
 
-int main(void)
+void solution()
 {
-	int row, col;
-	for (row = 1; row < 5; row++)
+    int row, col;
+	for (row = 1; row < 5; row++) 
 	{
-		if (row == 1 || row == 4)
+		if (row == 1 || row == 4) 
 		{
-			for (col = 1; col < 6; col++)
+			for (col = 1; col <= 5; col++) 
 			{
 				printf("*");
 			}
 		}
-
-		else
+		else 
 		{
 			printf("*");
 			for (col = 1; col < 4; col++)
@@ -24,5 +23,10 @@ int main(void)
 		}
 		printf("\n");
 	}
+}
+
+int main(void) 
+{
+	solution();
 	return 0;
 }
