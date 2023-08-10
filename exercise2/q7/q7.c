@@ -1,53 +1,40 @@
 #include <stdio.h>
 
+void solution()
+{
+    int row, col;
+    for (row = 0; row < 7; row++)
+    {
+        for (col = 0; col < 8; col++)
+        {
+            if (row == 0 || row == 6 || col == 0 || col == 7)
+            {
+                printf("*");
+            }
+            else if ((row == 2 || row == 4) && (col == 2 || col == 5))
+            {
+                printf("#");
+            }
+            else if (row == 3 && (col == 2 || col == 5))
+            {
+                printf("#");
+            }
+            else if (row == 3 && (col == 3 || col == 4))
+            {
+                printf(" ");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        
+        printf("\n");
+    }
+}
+
 int main(void)
 {
-	int row, column;
-	for (row = 0; row < 7; row++)
-	{
-		printf("*");
-		switch(row)
-		{
-			case 0:
-			case 6:
-			for (column = 1; column < 7; column++) 
-			{
-				printf("*");
-			}
-			break;
-
-			case 1:
-			case 5:
-			for (column = 1; column < 7; column++)
-			{
-				printf(" ");
-			}
-			break;
-
-			case 2:
-			case 4:
-			printf(" ");
-			for (column = 2; column < 6; column++) 
-			{
-				printf("#");
-			}
-			printf(" ");
-			break;
-			
-			case 3:
-			for (column = 0; column < 7; column++)
-            {
-                if (column == 2 || column == 5)
-                    printf("#");
-                else if (column == 7 || column == 0)
-                    continue;
-                else
-                    printf(" ");
-            }
-            break;
-        }
-        printf("*");
-        printf("\n");
-	}
-	return 0;
+    solution();
+    return 0;
 }
