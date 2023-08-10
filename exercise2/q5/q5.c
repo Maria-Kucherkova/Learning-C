@@ -1,21 +1,25 @@
 #include <stdio.h>
+
+void solution()
+{
+    int row, col;
+    for (row = 1; row <= 6; row++)
+    {
+        for (int space = 1; space < row; space++)
+        {
+            printf(" ");
+        }
+        for (col = 6; col >= row; col--)
+        {
+            printf("*");
+        }
+        
+        printf("\n");
+    }
+}
+
 int main(void)
 {
-	int row, column;
-	for (row = 0 ; row < 6 ; row++)
-	{
-		for (column = 0 ; column < row ; column++) 
-		{ 
-			printf(" ");
-		}
-		
-		for (column = 0 ; column < 6 - row ; column++) 
-		{
-			printf("*");
-		}
-		
-		printf("\n");
-	}
-	
-	return 0;
+	solution();
+    return 0;
 }
