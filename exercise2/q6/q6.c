@@ -1,46 +1,40 @@
 #include <stdio.h>
+
+void solution()
+{
+    int row, col;
+    for (row = 0; row < 5; row++)
+    {
+        for (col = 0; col < row; col++)
+        {
+            printf(" ");
+        }
+        
+        for (col = 0; col < 5; col++)
+        {
+            printf("*");
+        }
+        
+        printf("\n");
+    }
+    for (row = 3; row >= 0; row--)
+    {
+        for (col = 0; col < row; col++)
+        {
+            printf(" ");
+        }
+        
+        for (col = 0; col < 5; col++)
+        {
+            printf("*");
+        }
+        
+        printf("\n");
+    }
+}
+
 int main(void)
 {
-	int spaces = 0;
-	int step;
-	int row, column;
-
-	for (row = 0 ; row < 9 ; row++)
-	{
-		for (column = 0 ; column < spaces ; column++) 
-		{
-			printf(" ");
-		}
-
-		for (column = 0 ; column < 5 ; column++)
-		{
-			printf("*");
-		}
-		
-		printf("\n");
-
-		if (row == 0 || row == 7)
-		{
-			int step = 2;
-		}
-
-		else
-		{
-			int step = 1;
-		}
-		
-		if (row < 4)
-		{
-			spaces = spaces + step;
-		}
-		
-		else
-		{
-			spaces = spaces - step;
-		}
-		
-		
-	}
-
-	return 0;
+    solution();
+    return 0;
 }
