@@ -1,43 +1,29 @@
 #include <stdio.h>
-#include <stdbool.h> 
 
-bool isEven(int n)
+void solution()
 {
-    if (n % 2 == 0)
+    int row, col;
+    
+    for (row = 0; row < 7; row++)
     {
-        return true;
-    }
-    else
-    {
-        return false;
+        for (col = 0; col < 7; col++)
+        {
+            if ((row + col) % 2 == 0)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf("#");
+            }
+        }
+        
+        printf("\n");
     }
 }
 
 int main(void)
 {
-    int row, column;
-    for (row = 0; row < 6; row++)
-    {
-        for (column = 0; column < 7; column++)
-        {
-            if (isEven(row) && isEven(column))
-            {
-                printf("*");
-            }
-            else if (isEven(row) && (!isEven(column)))
-            {
-                printf("#");
-            }
-            else if ((!isEven(row)) && (isEven(column)))
-            {
-                printf("#");
-            }
-            else if ((!isEven(row)) && (!isEven(column)))
-            {
-                printf("*");
-            }
-        }
-        printf("\n");
-    }
+    solution();
     return 0;
 }
