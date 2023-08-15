@@ -10,6 +10,9 @@ file(GLOB Q5_SOURCE_FILES q5/*.c)
 file(GLOB Q6_SOURCE_FILES q6/*.c)
 file(GLOB Q7_SOURCE_FILES q7/*.c)
 file(GLOB Q8_SOURCE_FILES q8/*.c)
+file(GLOB Q9_SOURCE_FILES q9/*.c)
+file(GLOB Q10_SOURCE_FILES q10/*.c)
+
 
 # Add source files
 add_executable(Q1 ${Q1_SOURCE_FILES})
@@ -20,3 +23,5 @@ add_executable(Q5 ${Q5_SOURCE_FILES})
 add_executable(Q6 ${Q6_SOURCE_FILES})
 add_executable(Q7 ${Q7_SOURCE_FILES})
 add_executable(Q8 ${Q8_SOURCE_FILES})
+add_executable(Q9 ${Q9_SOURCE_FILES})
+add_executable(Q10 ${Q10_SOURCE_FILES})
