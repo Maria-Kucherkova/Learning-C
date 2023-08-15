@@ -29,7 +29,7 @@ void solution()
 		}
 		printf("\n");
 	}
-	
+
 	for (lastRow = 0; lastRow < 7; lastRow++)
 	{
 		printf("#");
