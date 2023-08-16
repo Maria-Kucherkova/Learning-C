@@ -2,6 +2,8 @@
 
 cmake_minimum_required(VERSION 3.26)
 
+set(CMAKE_C_STANDARD 17)
+
 project(Exercises)
 
 # Add the Exercise1/Q1 subdirectory
