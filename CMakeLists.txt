@@ -8,5 +8,6 @@ project(Exercises)
 
 # Add the Exercise1/Q1 subdirectory
 add_subdirectory("exercise2")
+add_subdirectory("exercise3")
 
 # You can add more subdirectories here if needed
