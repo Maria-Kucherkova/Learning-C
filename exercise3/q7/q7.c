@@ -21,7 +21,6 @@ int main () {
 
 	for (int i = first; i <= last; i++) {
 		if (isPrime(i) == true) {
-			// printf("The number %d is prime\n", i);
 			if (i - previousPrime <= 2) {
 				printf("The numbers %d and %d are twin primes\n", previousPrime, i);
 			}
