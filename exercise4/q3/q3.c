@@ -3,17 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-char* stringCopy(char *s)
-{
-	char* copy = malloc(sizeof(*s)-1);
-	int size = strlen(s);
-	for (int i = 0; i < size; i++)
-	{
-		copy[i] = s[i];
-	}
-	return copy;
-}
-
 void swap(int *mug1, int *mug2) 
 {
 	int mug3;
@@ -45,14 +34,10 @@ void printIntegerArray(int* arrayPointer, int size)
 }
 
 int main () 
-{
-	char stringArray[] = {'H', 'e', 'l', 'l', 'o', 'w', 'o'};
-	char* copy = stringCopy(stringArray);
-	printf("%s\n", copy);
-	
-	//int integerArray[] = {31, 15, 20, 39, 13};
-	//sort5numbers(integerArray, 5);
-	//printIntegerArray(integerArray, 5);
+{	
+	int integerArray[] = {31, 15, 20, 39, 13};
+	sort5numbers(integerArray, 5);
+	printIntegerArray(integerArray, 5);
 	
 	return 0;
 }
